@@ -6,7 +6,7 @@ env:
   # Directory within the Cloud Manager Git repository
   PROJECT_DIR: project-a
   # Cloud Manager's Git repository
-  MAIN_REPOSITORY: https://tklein@adobe.com:${{ secrets.GITHUB_TOKEN }}@git.cloudmanager.adobe.com/TobiADOBE/ams
+  MAIN_REPOSITORY: https://${{ secrets.PAT }}@github.com/TobiADOBE/ams
   # The branch in Cloud Manager's Git repository to push to
   MAIN_BRANCH : main
 
