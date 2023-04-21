@@ -9,7 +9,7 @@ env:
   #MAIN_REPOSITORY: git@github.com:TobiADOBE/ams.git
   MAIN_REPOSITORY: https://${{ secrets.MAIN_USER }}:${{ secrets.MAIN_PASSWORD }}@git.cloudmanager.adobe.com/deutschebankag/test/
   # The branch in Cloud Manager's Git repository to push to
-  MAIN_BRANCH : main
+  MAIN_BRANCH : master
 
 # Only run on a push to this branch
 on:
