@@ -6,7 +6,8 @@ env:
   # Directory within the Cloud Manager Git repository
   PROJECT_DIR: project-a
   # Cloud Manager's Git repository
-  MAIN_REPOSITORY: git@github.com:TobiADOBE/ams.git
+  #MAIN_REPOSITORY: git@github.com:TobiADOBE/ams.git
+  MAIN_REPOSITORY: https://$MAIN_USER:$MAIN_PASSWORD@git.cloudmanager.adobe.com/deutschebankag/test/
   # The branch in Cloud Manager's Git repository to push to
   MAIN_BRANCH : main
 
@@ -39,7 +40,7 @@ jobs:
       # Checkout the main project
       - name: Checkout main project
         run:
-          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY}.git main
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY} ${MAIN_BRANCH}
       # Move sub project
       - name: Move project to main project
         run: |
